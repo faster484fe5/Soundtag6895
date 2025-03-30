@@ -1,0 +1,50 @@
+/* Fond animé avec un dégradé multicolore */
+body {
+    margin: 0;
+    overflow: hidden; /* Empêche le défilement */
+    background: linear-gradient(45deg, red, yellow, blue, green, purple, cyan, orange);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite linear; /* Animation du fond */
+    position: relative;
+}
+
+/* Animation du fond en dégradé */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Style des textes animés */
+.random-text {
+    position: absolute;
+    font-weight: bold;
+    user-select: none; /* Empêche la sélection */
+    font-family: Arial, sans-serif;
+    mix-blend-mode: difference; /* Effet lumineux */
+    white-space: nowrap;
+    animation: rotateText 2s infinite linear; /* Rotation infinie */
+}
+
+/* Animation de rotation */
+@keyframes rotateText {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Style de l'icône du robot */
+#robot {
+    cursor: pointer;
+    width: 120px;
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* L'image reste au-dessus */
+}
+
+/* Effet au survol */
+#robot:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
