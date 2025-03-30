@@ -6,8 +6,8 @@ document.getElementById("robot").addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const phrases = [
-        "ahhhhh", "goofy", "ahhhh gyat", "nooo", "aie", "quoi ?", "hein ?", 
-        "aie aie aie", "bro ?", "wtf", "OMG", "skibidi", "GYAATT", "huh ?", "damn"
+        "ahhhhh", "goofy", "ahhhh gyat", "nooo", "good boy", "why ?", "gyyyyat ?", 
+        "bla bla bla ble ble ble", "bro ?", "wtf", "OMG", "skibidi", "GYAATT", "huh skibidi gyyat", "damn"
     ];
 
     const colors = ["red", "yellow", "blue", "green", "purple", "orange", "white", "cyan"];
